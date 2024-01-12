@@ -23,10 +23,10 @@ public class PostGraphQLController {
         return this.postService.getPostById(id);
     }
 
-    @QueryMapping
-    public List<PostDto> getAllPosts(){
-        return this.postService.getAllPosts();
-    }
+//    @QueryMapping
+//    public List<PostDto> getAllPosts(){
+//        return this.postService.getAllPosts();
+//    }
 
     @MutationMapping
     public PostDto createPost(@Argument String title, @Argument String description, @Argument String content){
